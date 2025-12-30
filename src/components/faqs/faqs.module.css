@@ -1,0 +1,141 @@
+.faqs {
+  background-color: #000;
+  color: #fff;
+  padding: 75px 6%;
+}
+
+/* Heading */
+.faqs h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* FAQ container */
+.list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Each FAQ item */
+.item {
+  margin-bottom: 10px;
+}
+
+/* Question row */
+.question {
+  width: 100%;
+  background: #2d2d2d;
+  color: #fff;
+  border: none;
+  padding: 22px 24px;
+  font-size: 22px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.25s ease;
+}
+
+.question:hover {
+  background: #414141;
+}
+
+/* Plus / close icon */
+.question span {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+/* Answer panel */
+.answer {
+  background: #2d2d2d;
+  border-top: 1px solid #000;
+  padding: 22px 24px;
+  animation: expand 0.25s ease-in-out;
+}
+
+.answer p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e5e5e5;
+  margin: 0;
+}
+
+/* Expand animation */
+@keyframes expand {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CTA below FAQ */
+.cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.inputBox input {
+  width: 360px;
+  max-width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #555;
+  color: white;
+}
+
+.inputBox input:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.inputBox button {
+  background: #e50914;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 14px 26px;
+  cursor: pointer;
+}
+
+.inputBox button:hover {
+  background: #f40612;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faqs h2 {
+    font-size: 28px;
+  }
+
+  .question {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  .answer p {
+    font-size: 16px;
+  }
+}
